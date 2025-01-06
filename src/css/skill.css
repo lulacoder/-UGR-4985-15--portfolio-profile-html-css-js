@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "inter", -apple-system, sans-serif;
+    background-color: #b8b8b8;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 4rem;
+}
+
+.nav-logo {
+    width: 20%;
+    height: 5%;
+    padding: 0.5rem 2rem;
+    border-radius: 45%;
+    object-fit: cover;
+    
+}
+
+.nav-list {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav-link {
+    color: black;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.section-title{
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+.skill-title{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    text-align: center;
+    color: black;
+}
+
+.skill-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem;
+    margin: 2rem;
+    
+    border-radius: 8px;
+}
+.skill-item img{
+    width: 30%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+.skill-item p{
+    font-size: 1.3rem;
+    max-width: 400px;
+    color: black;
+}
+
+.soft-skills-section {
+    text-align: center;
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Section title */
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: #000;
+}
+
+/* Skill card styles */
+.skill-card {
+    background-color: #468999;
+    color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Skill title */
+.skill-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+
+/* Skill description */
+.skill-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #f0f0f0;
+}
+ h2{
+    color: #000 !important;
+}
+
+.footer {
+  padding: 24px 32px; /* Top/Bottom: 24px, Left/Right: 32px */
+  background-color: #5c5b5b; /* Neutral gray background */
+  color: #ffffff; /* White text color for contrast */
+}
+
+/* Content Wrapper */
+.footer .max-width-container {
+  max-width: 1152px; /* Matches Tailwind's 6xl size */
+  margin: 0 auto; /* Center content horizontally */
+}
+
+/* Top Section (Contact Info & Social Links) */
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 32px; /* Space below the top section */
+}
+
+/* Contact Info Section */
+.contact-info {
+  flex: 1; /* Take up equal space */
+}
+
+.contact-info h3 {
+  color: #ffffff;
+  font-weight: 500; /* Medium font weight */
+  margin-bottom: 8px; /* Space below the heading */
+}
+
+.contact-info p {
+  margin: 4px 0; /* Vertical spacing between contact details */
+}
+
+.contact-info a {
+  color: #add8e6; /* Light blue for links */
+  text-decoration: underline; /* Underline links */
+}
+
+/* Social Links Section */
+.social-links {
+  flex: 1; /* Take up equal space */
+  text-align: right; /* Align content to the right */
+}
+
+.social-links h3 {
+  color: #ffffff;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.social-links .social-icons {
+  display: flex;
+  gap: 24px; /* Space between social icons */
+  justify-content: flex-end; /* Push icons to the right */
+}
+
+.social-links a {
+  display: inline-block;
+  transition: opacity 0.2s ease; /* Smooth hover effect */
+}
+
+.social-links a:hover {
+  opacity: 0.8; /* Slightly fade out on hover */
+}
+
+.social-links img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Footer Bottom Section (Copyright) */
+.footer-bottom {
+  text-align: center;
+  font-size: 14px; /* Smaller text for copyright */
+  color: #d3d3d3; /* Lighter gray text */
+}
+
+/* Add this to the existing CSS */
+
+/* Global transition for all elements */
+* {
+  transition: all 0.3s ease;
+}
+
+/* Navbar links hover effect */
+.nav-link {
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: currentColor;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Skill items hover effect */
+.skill-item {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Skill cards hover effect */
+.skill-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Footer links hover effect */
+.footer a {
+  transition: opacity 0.3s ease;
+}
+
+.footer a:hover {
+  opacity: 0.7;
+}
+
+/* Social icons hover effect */
+.social-links a {
+  transition: transform 0.3s ease;
+}
+
+.social-links a:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+
+}
+
+/* iPhone 16 Pro Max - Portrait */
+@media screen and (min-width: 440px) and (max-width: 956px) and (orientation: portrait) {
+
+}
+
+/* iPhone 16 Pro Max - Landscape */
+@media screen and (min-width: 440px) and (max-width: 956px) and (orientation: landscape) {
+
+}

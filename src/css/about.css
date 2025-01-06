@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family : "inter", sans-serif;
+    background-color:#b8b8b8;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 4rem;
+}
+
+.nav-logo {
+    width: 20%;
+    height: 5%;
+    padding: 0.5rem 2rem;
+    border-radius: 45%;
+    object-fit: cover;
+    
+}
+
+.nav-list {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    padding-top: 2%;
+}
+
+.nav-link {
+    color: black;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+/* About section styles */
+
+.about-section {
+    padding: 4rem;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    color: #333;
+    max-width: 1200px;
+    border-radius: 8px;
+}
+.about-section h1{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    padding-left: 18%;
+    padding-bottom: 2%;
+    align-self: flex-start;
+    align-content: center;
+    text-align: center;
+}
+
+.about-content {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    
+}
+.about-content img {
+    width: 30%;
+    height: auto;
+    border-radius: 8px;
+}
+.about-content p {
+    font-size: 1.3rem;
+    max-width: 300px;
+}
+
+
+
+/* Interests Section */
+.interests-section {
+    padding: 2rem 4rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    background-color: #b8b8b8;
+}
+
+.interest-item {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.interest-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.interest-description {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.interest-video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Footer */
+.footer {
+  padding: 24px 32px; /* Top/Bottom: 24px, Left/Right: 32px */
+  background-color: #5c5b5b; /* Neutral gray background */
+  color: #ffffff; /* White text color for contrast */
+}
+
+/* Content Wrapper */
+.footer .max-width-container {
+  max-width: 1152px; /* Matches Tailwind's 6xl size */
+  margin: 0 auto; /* Center content horizontally */
+}
+
+/* Top Section (Contact Info & Social Links) */
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 32px; /* Space below the top section */
+}
+
+/* Contact Info Section */
+.contact-info {
+  flex: 1; /* Take up equal space */
+}
+
+.contact-info h3 {
+  color: #ffffff;
+  font-weight: 500; /* Medium font weight */
+  margin-bottom: 8px; /* Space below the heading */
+}
+
+.contact-info p {
+  margin: 4px 0; /* Vertical spacing between contact details */
+}
+
+.contact-info a {
+  color: #add8e6; /* Light blue for links */
+  text-decoration: underline; /* Underline links */
+}
+
+/* Social Links Section */
+.social-links {
+  flex: 1; /* Take up equal space */
+  text-align: right; /* Align content to the right */
+}
+
+.social-links h3 {
+  color: #ffffff;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.social-links .social-icons {
+  display: flex;
+  gap: 24px; /* Space between social icons */
+  justify-content: flex-end; /* Push icons to the right */
+}
+
+.social-links a {
+  display: inline-block;
+  transition: opacity 0.2s ease; /* Smooth hover effect */
+}
+
+.social-links a:hover {
+  opacity: 0.8; /* Slightly fade out on hover */
+}
+
+.social-links img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Footer Bottom Section (Copyright) */
+.footer-bottom {
+  text-align: center;
+  font-size: 14px; /* Smaller text for copyright */
+  color: #d3d3d3; /* Lighter gray text */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+
+  .nav-logo {
+    width: 30%;
+    height: auto;
+  }
+  .footer-top {
+    flex-direction: column; /* Stack contact info and social links */
+    gap: 32px; /* Space between sections */
+  }
+
+  .social-links {
+    text-align: left; /* Align social links to the left */
+  }
+
+  .social-links .social-icons {
+    justify-content: flex-start; /* Push icons to the left */
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  .nav-logo {
+    width: 30%;
+    height: auto;
+  }
+  .footer {
+    padding: 24px; /* Even padding on all sides */
+  }
+
+  .footer-top {
+    padding: 0 16px; /* Even padding on left and right */
+  }
+
+  .contact-info,
+  .social-links {
+    text-align: center; /* Center align contact info and social links */
+  }
+
+  .social-links .social-icons {
+    justify-content: center; /* Center align social icons */
+  }
+  .footer {
+    padding: 16px 24px;
+  }
+
+  .footer-top {
+    gap: 1rem;
+  }
+
+  .footer-bottom {
+    font-size: 12px;
+  }
+  
+}
