@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education - Leul Tesfaye</title>
+    <link rel="stylesheet" href="css/education.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/header-footer.css">
+
+    
+    
+
+
+    
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+        <a href="#" class="logo">LEUL</a>
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="home.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="About.html" class="nav-link">About Me</a></li>
+            <li class="nav-item"><a href="Education.html" class="nav-link">Education</a></li>
+            <li class="nav-item"><a href="skills.html" class="nav-link">Skills</a></li>
+            <li class="nav-item"><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+</header>
+    
+    <main>
+        <section id="education" class="education-section">
+            <h1 class="section-title">My Educational Journey</h1>
+
+            <div class="education-item">
+                <img src="images/diploma.jpg" alt="Lideta Catholic Cathedral School Diploma" class="education-image">
+                <div class="education-item-details">
+                    <h2 class="school-name">Lideta Catholic Cathedral School</h2>
+                    <p class="graduation-info">Graduate of 2022</p>
+                    <p class="school-description">I completed my high school education at Lideta Catholic Cathedral School in Addis Ababa, graduating in 2022.</p>
+                </div>
+            </div>
+           
+            <article class="current-education">
+                <h2 class="section-title">Current Education</h2>
+                <div class="education-wrapper">
+                <img src="images/AAU.png" alt="Addis Ababa University Logo" class="university-logo">
+                
+                <div class="university-details">
+                    
+                    <h2 class="university-name">Addis Ababa University</h2>
+                    <p class="program-info">Currently enrolled in B.Sc in Software Engineering</p>
+                    <p class="university-description">I am currently pursuing my degree at Addis Ababa University's Institute of Technology at 5 Kilo.</p>
+                </div>
+
+            </div>
+
+                <div class="additional-education">
+                    <h3>Additional Learning</h3>
+                    <p>I am also taking extra courses on Udemy focusing on full-stack web development.</p>
+                </div>
+
+                <div class="skills-section">
+                    <ul class="skills-list">
+                      <li class="skill-item">
+                        <h3>Programming Languages Galore:</h3>
+                        <p>From the classic C++ to the hip JavaScript, and the versatile Python to the robust Java, I am living the dream as they say!</p>
+                      </li>
+                      <li class="skill-item">
+                        <h3>Algorithms and Data Structures:</h3>
+                        <p>I can sort faster than a librarian on espresso and search quicker than a detective with x-ray vision. Big O notation? More like Big OH-YEAH!</p>
+                      </li>
+                    </ul>
+                  </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+          <div class="footer-section">
+              <h3>Contact Me</h3>
+              <p>Email: <a href="mailto:leultesfaye0755@gmail.com">leultesfaye0755@gmail.com</a></p>
+              <p>Phone: <a href="tel:+251972690755">+251 972 690 755</a></p>
+          </div>
+          <div class="footer-section">
+              <h3>Follow Me</h3>
+              <div class="social-icons">
+                  <a href="https://web.telegram.org/k/" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                  <a href="https://github.com/lulacoder" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                  <a href="https://www.linkedin.com/in/leul-tesfaye-b988ab287/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+              </div>
+          </div>
+      </div>
+      <div class="footer-bottom">
+          <p>&copy; 2024 Leul Tesfaye. All rights reserved.</p>
+      </div>
+  </footer>
+
+      <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+    
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        });
+    
+        document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        }));
+    </script>
+
+
+      
+</body>
+</html>

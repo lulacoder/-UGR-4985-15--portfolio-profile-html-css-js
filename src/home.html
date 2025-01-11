@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leul Tesfaye - Software Engineering Student</title>
+
+
+    <link rel="stylesheet" href="css/home.css">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/header-footer.css">  
+
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+        <a href="#" class="logo">LEUL</a>
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="home.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="About.html" class="nav-link">About Me</a></li>
+            <li class="nav-item"><a href="Education.html" class="nav-link">Education</a></li>
+            <li class="nav-item"><a href="skills.html" class="nav-link">Skills</a></li>
+            <li class="nav-item"><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+</header>
+    
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Hi, I am Leul</h1>
+                    <p class="hero-description">A software engineering student from AAU, I am a developer with a strong interest in ethical hacking.</p>
+                    <p class="hero-cta"><span class="highlight">Take a look:</span> <a href="portfolio.html" class="cta-link">View my work</a></p>
+                </div>
+                <div class="hero-image">
+                    <img src="images/0a510e57-77ae-48ac-8102-b4b04c196360.jpg" alt="A picture of Leul Tesfaye" class="profile-image">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+          <div class="footer-section">
+              <h3>Contact Me</h3>
+              <p>Email: <a href="mailto:leultesfaye0755@gmail.com">leultesfaye0755@gmail.com</a></p>
+              <p>Phone: <a href="tel:+251972690755">+251 972 690 755</a></p>
+          </div>
+          <div class="footer-section">
+              <h3>Follow Me</h3>
+              <div class="social-icons">
+                  <a href="https://web.telegram.org/k/" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                  <a href="https://github.com/lulacoder" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                  <a href="https://www.linkedin.com/in/leul-tesfaye-b988ab287/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+              </div>
+          </div>
+      </div>
+      <div class="footer-bottom">
+          <p>&copy; 2024 Leul Tesfaye. All rights reserved.</p>
+      </div>
+  </footer>
+
+      <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+    
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        });
+    
+        document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        }));
+    </script>
+</body>
+</html>

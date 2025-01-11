@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Leul Tesfaye</title>
+    <link rel="stylesheet" href="css/about.css">
+
+    <link rel="stylesheet" href="css/header-footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        /* Reset and base styles */
+
+
+        
+
+    </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+        <a href="#" class="logo">LEUL</a>
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="home.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="About.html" class="nav-link">About Me</a></li>
+            <li class="nav-item"><a href="Education.html" class="nav-link">Education</a></li>
+            <li class="nav-item"><a href="skills.html" class="nav-link">Skills</a></li>
+            <li class="nav-item"><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+</header>
+    
+    <main>
+        <section id="about-intro" class="about-section">
+            <h1 class="section-title">Here's a Little Bit About Me</h1>
+            <div class="about-content">
+                <img src="images/AI.jpg" alt="The AI Revolution" class="about-image">
+                <p class="about-text">I am extremely fascinated by what AI is doing to this world. It's growing so fast, it's just incredible!</p>
+            </div>
+        </section>
+
+        <section id="interests" class="interests-section">
+            <div class="interest-item">
+                <h2 class="interest-title">Philosophy and Thought-Provoking Ideas</h2>
+                <p class="interest-description">I like philosophy and I think about the topic discussed in this video a lot:</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/e-k7b8Zmh70?si=tEpzLwgGYqu6xVeS" title="Philosophy video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="interest-video"></iframe>
+            </div>
+
+            <div class="interest-item">
+                <h2 class="interest-title">Favorite Podcasts</h2>
+                <p class="interest-description">The modern world is full of podcasts these days. Here's my favorite, give it a listen:</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/M4PzOjM5BJQ?si=jbwJlbsU7b3qDaaw" title="Favorite podcast" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="interest-video"></iframe>
+            </div>
+
+            <div class="interest-item">
+                <h2 class="interest-title">Thoughts on Money</h2>
+                <p class="interest-description">It's funny how we think about money, isn't it?</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/B8d4uqQjk6o?si=cC5PRQ7gC4C2qds8" title="Video about money" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="interest-video"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+          <div class="footer-section">
+              <h3>Contact Me</h3>
+              <p>Email: <a href="mailto:leultesfaye0755@gmail.com">leultesfaye0755@gmail.com</a></p>
+              <p>Phone: <a href="tel:+251972690755">+251 972 690 755</a></p>
+          </div>
+          <div class="footer-section">
+              <h3>Follow Me</h3>
+              <div class="social-icons">
+                  <a href="https://web.telegram.org/k/" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                  <a href="https://github.com/lulacoder" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                  <a href="https://www.linkedin.com/in/leul-tesfaye-b988ab287/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+              </div>
+          </div>
+      </div>
+      <div class="footer-bottom">
+          <p>&copy; 2024 Leul Tesfaye. All rights reserved.</p>
+      </div>
+  </footer>
+
+      <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+    
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        });
+    
+        document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        }));
+    </script>
+</body>
+</html>

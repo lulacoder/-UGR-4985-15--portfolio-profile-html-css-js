@@ -1,0 +1,333 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "inter", -apple-system, sans-serif;
+    background-color: #b8b8b8;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 4rem;
+}
+
+.nav-logo {
+    width: 20%;
+    height: 5%;
+    padding: 0.5rem 2rem;
+    border-radius: 45%;
+    object-fit: cover;
+    
+}
+
+.nav-list {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav-link {
+    color: black;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+.section-title{
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.education-item{
+    display: flex;
+    justify-content: center;
+}
+.education-item img{
+    width: 30%;
+    height: auto;
+    border-radius: 10%;
+    object-fit: cover;
+}
+.education-item-details{
+    padding: 1rem;
+    margin-left: 2rem;
+    border-radius: 10px;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    align-content: center;
+
+    justify-content: center;
+    max-width: 500px;
+}
+
+.section-title{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 18%;
+    padding-bottom: 2%;
+    padding-top: 5%;
+    align-self: flex-start;
+    align-content: center;
+    text-align: center;
+}
+
+.education-wrapper{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-left: 5%;
+}
+.education-wrapper img{
+    width: 30%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.additional-education{
+    margin-top: 2rem;
+    margin-left: 10%;
+    padding: 1rem;
+    border-radius: 10%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+    justify-content: center;
+    max-width: 500px;
+}
+
+.additional-education h3{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.skills-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  padding: 2rem;
+  max-width: 70%;
+}
+
+.skills-list {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skill-item {
+  background-color: #468999;
+  color: #000;
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 300px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.skill-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.skill-item p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+
+.footer {
+  padding: 24px 32px; /* Top/Bottom: 24px, Left/Right: 32px */
+  background-color: #5c5b5b; /* Neutral gray background */
+  color: #ffffff; /* White text color for contrast */
+}
+
+/* Content Wrapper */
+.footer .max-width-container {
+  max-width: 1152px; /* Matches Tailwind's 6xl size */
+  margin: 0 auto; /* Center content horizontally */
+}
+
+/* Top Section (Contact Info & Social Links) */
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 32px; /* Space below the top section */
+}
+
+/* Contact Info Section */
+.contact-info {
+  flex: 1; /* Take up equal space */
+}
+
+.contact-info h3 {
+  color: #ffffff;
+  font-weight: 500; /* Medium font weight */
+  margin-bottom: 8px; /* Space below the heading */
+}
+
+.contact-info p {
+  margin: 4px 0; /* Vertical spacing between contact details */
+}
+
+.contact-info a {
+  color: #add8e6; /* Light blue for links */
+  text-decoration: underline; /* Underline links */
+}
+
+/* Social Links Section */
+.social-links {
+  flex: 1; /* Take up equal space */
+  text-align: right; /* Align content to the right */
+}
+
+.social-links h3 {
+  color: #ffffff;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.social-links .social-icons {
+  display: flex;
+  gap: 24px; /* Space between social icons */
+  justify-content: flex-end; /* Push icons to the right */
+}
+
+.social-links a {
+  display: inline-block;
+  transition: opacity 0.2s ease; /* Smooth hover effect */
+}
+
+.social-links a:hover {
+  opacity: 0.8; /* Slightly fade out on hover */
+}
+
+.social-links img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Footer Bottom Section (Copyright) */
+.footer-bottom {
+  text-align: center;
+  font-size: 14px; /* Smaller text for copyright */
+  color: #d3d3d3; /* Lighter gray text */
+}
+
+/* General smooth transition for all elements */
+* {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Navbar hover effects */
+.nav-link:hover {
+    color: #468999; /* Change link color on hover */
+    text-decoration: underline; /* Add underline */
+}
+
+/* Education item hover effect */
+.education-item:hover {
+    transform: scale(1.02); /* Slight zoom effect */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* More prominent shadow */
+}
+
+/* Skills section hover effect */
+.skill-item:hover {
+    background-color: #5aa4b6; /* Lighten the background color */
+    transform: translateY(-5px); /* Slight upward movement */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Add shadow */
+}
+
+/* Footer social links hover effect */
+.social-links a:hover {
+    transform: scale(1.2); /* Slight zoom effect on icons */
+    opacity: 0.9; /* Slight fade on hover */
+}
+
+/* Contact info link hover effect */
+.contact-info a:hover {
+    color: #468999; /* Change to the navbar link hover color */
+}
+
+/* Smooth hover effect for additional education */
+.additional-education:hover {
+    transform: scale(1.02); /* Slight zoom effect */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* More prominent shadow */
+}
+
+/* Button-like hover for the entire university logo and details */
+.education-wrapper:hover {
+    transform: scale(1.02); /* Slight zoom */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Add shadow */
+}
+
+/* Footer hover effects */
+.footer-bottom:hover {
+    color: #ffffff; /* Highlight copyright text */
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Subtle glow effect */
+}
+
+
+@media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+
+}
+
+/* iPhone 16 Pro Max - Portrait */
+@media screen and (min-width: 440px) and (max-width: 956px) and (orientation: portrait) {
+
+  .nav-list {
+    display: none; /* Hide nav list on smaller screens */
+    flex-direction: column; /* Stack items vertically */
+    position: absolute;
+    top: 60px; /* Adjust based on navbar height */
+    left: 0;
+    width: 100%;
+    background-color: #f0f0f0;
+    text-align: center; /* Center text in the menu */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.nav-item {
+  margin: 10px 0; /* Add vertical spacing between menu items */
+}
+
+.hamburger {
+    display: block; /* Show hamburger on smaller screens */
+}
+/* Styles for the active (open) menu */
+.nav-list.active {
+    display: flex;
+}
+/* Hamburger animation when active */
+.hamburger.active .bar:nth-child(1) {
+transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.hamburger.active .bar:nth-child(2) {
+opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(3) {
+transform: rotate(45deg) translate(-6px, -8px);
+}
+
+}
+
+
+/* iPhone 16 Pro Max - Landscape */
+@media screen and (min-width: 440px) and (max-width: 956px) and (orientation: landscape) {
+
+}
+
